@@ -1,8 +1,8 @@
-/*
+
 * {
     border: 1px solid red !important;
 }
-*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -84,8 +84,33 @@ h1 {
     font-size: 2.5em;
 }
 
+h2.projectshowcase {
+
+}
+
 hr.line {
-    border-bottom: 5px;
+    border-bottom: 2px solid;
+}
+
+img.largepic {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3.headline {
+    text-align: right;
+}
+
+img.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 500px) {
