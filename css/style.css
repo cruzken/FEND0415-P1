@@ -1,0 +1,25 @@
+/*
+* {
+    border: 1px solid red !important;
+}
+*/
+
+* {
+    font-family: 'Playfair Display SC', serif;
+}
+
+body {
+    background-color: #f6edcf;
+}
+
+.logo {
+	max-width: 20%;
+}
+
+.green {
+    color: #1abc9c;
+}
+
+a {
+    color: #1abc9c;
+}
