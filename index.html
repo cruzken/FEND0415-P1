@@ -28,41 +28,52 @@
   </head>
 
   <body>
-      <div class="container">
+      <div class="container top">
 
         <div class="row">
           <div class="col-md-6"><img class="logo" src="images/2015profile200px.jpg" alt="Me!"></div>
           <div class="col-md-6">
             <h1 class="text-right text-uppercase">Kenneth Cruz</h1>
-            <h3 class="text-right text-uppercase green">Front-End Web Development</h3>
+            <h3 class="text-right text-uppercase green">Front-End Web Development</h3>            
           </div>
         </div>
 
         <div class="row">
-          <img class="img-responsive" src="images/largepic.jpg" alt="Large Picture">
+          <hr>
+          <div class="col-md-12">
+            <img class="img-responsive" src="./images/largepic.jpg" alt="Large Picture">
+          </div>
         </div>
 
         <div class="row">
           <div class="col-md-12">
-        <h2>Featured Work</h2>
+            <h2>Featured Work</h2>
           </div>
         </div>
 
         <div class="row text-center">
+          <!-- Each image and link will execute a modal -->
           <div class="col-md-4">
-            <img class="img-responsive" src="./images/project1content1.jpg" alt="Content 1" data-toggle="modal" data-target="#myModal">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
+            <img class="img-responsive" src="./images/project1content1.jpg" alt="Projects" data-toggle="modal" data-target="#myModalProjects">
+            <h3><a data-toggle="modal" data-target="#myModalProjects">Projects</a></h3>
           </div>
           <div class="col-md-4">
-            <img class="img-responsive" src="./images/project1content2.jpg" alt="Content 2" data-toggle="modal" data-target="#myModal">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
+            <img class="img-responsive" src="./images/project1content2.jpg" alt="Travel" data-toggle="modal" data-target="#myModalTravel">
+            <h3><a data-toggle="modal" data-target="#myModalTravel">Travel</a></h3>
           </div>
           <div class="col-md-4">
-            <img class="img-responsive" src="./images/project1content3.jpg" alt="Content 3" data-toggle="modal" data-target="#myModal">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
+            <img class="img-responsive" src="./images/project1content3.jpg" alt="Food" data-toggle="modal" data-target="#myModalFood">
+            <h3><a data-toggle="modal" data-target="#myModalFood">Food</a></h3>
+          </div>
+          <hr>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <!-- Icon fonts from http://weloveiconfonts.com -->
+            <a class="brandico-linkedin-rect" href="https://ca.linkedin.com/in/cruzken"></a>
+            <a class="brandico-github" href="https://github.com/frostbytee"></a>
+            <a class="brandico-instagram-filled" href="https://instagram.com/kiko.321/"></a>
           </div>
         </div>
 
@@ -71,14 +82,66 @@
 
 
     <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModalProjects" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Featured Work</h4>
+        <h4 class="modal-title" id="myModalLabel">Projects</h4>
       </div>
       <div class="modal-body">
-        ...
+        <!-- Used Google Static Maps API -->
+        <img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=the%20distillery%20district&zoom=16&size=350x350&scale=1.75&markers=red%7C43.6502742,-79.3596125&&key=AIzaSyClWIHG25LLDXl9T37KKxcaPF26sUni6dc" alt="Map">
+        <p>All photos taken at the <a href="http://www.thedistillerydistrict.com/">Distillary</a></p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModalTravel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Travel</h4>
+      </div>
+      <div class="modal-body">
+                  <h4>Flights Completed</h4>
+
+          <dl>
+            <dd>Miami</dd>
+            <dd>Paris</dd>
+          </dl>
+
+          <h4>Flights Planned</h4>
+
+          <dl>
+            <dd>Japan</dd>
+            <dd>Venice</dd>
+            <dd>Rio de Janeiro</dd>
+            <dd>Valencia</dd>
+            <dd>Halong Bay</dd>
+            <dd>Sydney</dd>
+            <dd>Railay, Thailand</dd>
+            <dd>Bora Bora</dd>
+            <dd>Morocco</dd>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModalFood" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Food</h4>
+      </div>
+      <div class="modal-body">
+        Bacon ipsum dolor sit amet pastrami ribeye sausage, sirloin short ribs pork belly strip steak tenderloin boudin. Landjaeger beef ham hock, doner bacon pork belly filet mignon tenderloin short loin beef ribs tongue. Bresaola salami short ribs venison, pastrami jerky landjaeger. Hamburger meatball cow pork loin ham. Sirloin tail venison jerky kevin. Turducken ribeye sirloin fatback tenderloin short loin. Boudin sirloin tail venison filet mignon rump leberkas landjaeger bacon shank beef ribs ground round. Tail boudin landjaeger rump, chuck shankle leberkas pork belly pork tongue brisket short ribs ground round. Strip steak jowl pork loin beef ribs, ribeye tail spare ribs rump
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
